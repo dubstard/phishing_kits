@@ -1,0 +1,193 @@
+﻿<!DOCTYPE html>
+<!--[if IE 8]>
+    <html class="lt-ie9" dir="ltr"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html dir="ltr">
+<!--<![endif]-->
+<head>
+                    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<title>Kaspersky Internet Security</title>
+ <style>
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+body {
+	line-height: 1;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	text-align: center;
+}
+html,body {
+	width:100%;
+	height: 100%;
+	background: #f6f6f6;
+}
+.wrapper {
+	width:100%;
+	height: 100%;
+	vertical-align: middle;
+}
+body {
+	color: #333;
+    position: relative;
+	direction: $TextDirection$;
+	font-family: 'Segoe UI', Arial, Helvetica, 'Lucida Sans', sans-serif;
+}
+
+a, a:visited {color: #006d5c;}
+
+a:hover {
+	color: #009982;
+	outline: 0;
+}
+
+a:focus, a:active {
+	color: #005448;
+	outline: 1px dashed;
+}
+
+h1 {
+        font-size: 20px;
+        font-weight:600;
+        color: #E33630;
+        display: inline;
+        vertical-align: baseline;
+        margin-left: 5px;
+    }
+
+p {
+	font-size:14px;
+    line-height:150%
+}
+
+.main {
+	margin: 50px auto 0;
+	position: relative;
+	width: 600px;
+	background: white;
+	padding:50px 0 0 0;
+	border-width: 1px;
+	border-style: solid;
+	border-color:#ccc;
+}
+
+.logo {
+	margin:15px 30px 30px 30px;
+    width: 80px;
+    height: 18px;
+	float:left;
+    background:  url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAAASCAYAAADMgVnKAAAACXBIWXMAAAsTAAALEwEAmpwYAAAF+mlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMxNDUgNzkuMTYzNDk5LCAyMDE4LzA4LzEzLTE2OjQwOjIyICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1sbnM6cGhvdG9zaG9wPSJodHRwOi8vbnMuYWRvYmUuY29tL3Bob3Rvc2hvcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RFdnQ9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZUV2ZW50IyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ0MgMjAxOSAoV2luZG93cykiIHhtcDpDcmVhdGVEYXRlPSIyMDE5LTA2LTIxVDE1OjQwOjQwKzAzOjAwIiB4bXA6TW9kaWZ5RGF0ZT0iMjAxOS0wNi0yMVQxODoxNDowNCswMzowMCIgeG1wOk1ldGFkYXRhRGF0ZT0iMjAxOS0wNi0yMVQxODoxNDowNCswMzowMCIgZGM6Zm9ybWF0PSJpbWFnZS9wbmciIHBob3Rvc2hvcDpDb2xvck1vZGU9IjMiIHBob3Rvc2hvcDpJQ0NQcm9maWxlPSJzUkdCIElFQzYxOTY2LTIuMSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDplMDAwMmU1Yy1jM2I2LWEwNDAtOGE4MC1lZTAxOTEzZmI2NzciIHhtcE1NOkRvY3VtZW50SUQ9ImFkb2JlOmRvY2lkOnBob3Rvc2hvcDo4ODM5MmYwMC1iYTkyLTBmNDUtYmE1Yy0zMDg4NDAxMWRhMDciIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDplMmY1MDJhOC05MWVmLTI1NGItOGYyNS03NWFiYjExYmRmNzciPiA8eG1wTU06SGlzdG9yeT4gPHJkZjpTZXE+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJjcmVhdGVkIiBzdEV2dDppbnN0YW5jZUlEPSJ4bXAuaWlkOmUyZjUwMmE4LTkxZWYtMjU0Yi04ZjI1LTc1YWJiMTFiZGY3NyIgc3RFdnQ6d2hlbj0iMjAxOS0wNi0yMVQxNTo0MDo0MCswMzowMCIgc3RFdnQ6c29mdHdhcmVBZ2VudD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTkgKFdpbmRvd3MpIi8+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJzYXZlZCIgc3RFdnQ6aW5zdGFuY2VJRD0ieG1wLmlpZDplMDAwMmU1Yy1jM2I2LWEwNDAtOGE4MC1lZTAxOTEzZmI2NzciIHN0RXZ0OndoZW49IjIwMTktMDYtMjFUMTg6MTQ6MDQrMDM6MDAiIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkFkb2JlIFBob3Rvc2hvcCBDQyAyMDE5IChXaW5kb3dzKSIgc3RFdnQ6Y2hhbmdlZD0iLyIvPiA8L3JkZjpTZXE+IDwveG1wTU06SGlzdG9yeT4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7upHQLAAAKRElEQVRYhe2Ye4xdxX3HP7+Z87iPvWuv114gsLZxYkOA2KUu0JKURjFJaFAFLq+AE+XRitCGlqgNUUILNFIFtE4CIg+HlAKhuA1BKE4CARKTB5g4FgmP2NTBNngNay9e767Xe3fvveecmfn1j3ON7SpVCxVVVfUrjY7OmZkzv/nN7/UdUVX+H68fkXzzlttRMjDXAeNoAf1LYAZQBytXwuQofO8uiBIQCyFANYLCQUXACBigFUAAY8EF6KlBcwJOPgFOPA+27oB/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') top left no-repeat;
+}
+
+html[dir="rtl"] .logo {float:right;}
+
+.aside, .content {
+    display: block;
+}
+
+.aside {
+    margin: 0 40px;
+	padding: 0;
+    text-align:center;
+}
+.pic {
+    background-color: #E33630;
+  	width: 23px;
+	height: 23px;
+	margin-top: -1px;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAF+mlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMxNDIgNzkuMTYwOTI0LCAyMDE3LzA3LzEzLTAxOjA2OjM5ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1sbnM6cGhvdG9zaG9wPSJodHRwOi8vbnMuYWRvYmUuY29tL3Bob3Rvc2hvcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RFdnQ9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZUV2ZW50IyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ0MgMjAxOCAoV2luZG93cykiIHhtcDpDcmVhdGVEYXRlPSIyMDE4LTExLTAxVDE2OjM1OjE4KzAzOjAwIiB4bXA6TW9kaWZ5RGF0ZT0iMjAxOC0xMS0wMVQxNjozODoyNCswMzowMCIgeG1wOk1ldGFkYXRhRGF0ZT0iMjAxOC0xMS0wMVQxNjozODoyNCswMzowMCIgZGM6Zm9ybWF0PSJpbWFnZS9wbmciIHBob3Rvc2hvcDpDb2xvck1vZGU9IjMiIHBob3Rvc2hvcDpJQ0NQcm9maWxlPSJzUkdCIElFQzYxOTY2LTIuMSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo1NGJjMjBjMy0xZjdkLWE3NDAtYmI1OS05YmYzNmI2YzJiM2IiIHhtcE1NOkRvY3VtZW50SUQ9ImFkb2JlOmRvY2lkOnBob3Rvc2hvcDo5ODRiZTMxMy05MmIwLTg5NGQtODBlOS1jNzQzOTdmMGQ3ODAiIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDoxMGRhZjQyNC03OGMzLWEyNGEtODE3NS02Y2ZjZmM5OTZkOTgiPiA8eG1wTU06SGlzdG9yeT4gPHJkZjpTZXE+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJjcmVhdGVkIiBzdEV2dDppbnN0YW5jZUlEPSJ4bXAuaWlkOjEwZGFmNDI0LTc4YzMtYTI0YS04MTc1LTZjZmNmYzk5NmQ5OCIgc3RFdnQ6d2hlbj0iMjAxOC0xMS0wMVQxNjozNToxOCswMzowMCIgc3RFdnQ6c29mdHdhcmVBZ2VudD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTggKFdpbmRvd3MpIi8+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJzYXZlZCIgc3RFdnQ6aW5zdGFuY2VJRD0ieG1wLmlpZDo1NGJjMjBjMy0xZjdkLWE3NDAtYmI1OS05YmYzNmI2YzJiM2IiIHN0RXZ0OndoZW49IjIwMTgtMTEtMDFUMTY6Mzg6MjQrMDM6MDAiIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkFkb2JlIFBob3Rvc2hvcCBDQyAyMDE4IChXaW5kb3dzKSIgc3RFdnQ6Y2hhbmdlZD0iLyIvPiA8L3JkZjpTZXE+IDwveG1wTU06SGlzdG9yeT4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4Os9ixAAAAV0lEQVRIiWP8////fwYaAhYozUgj8/8z0chgOGBB41MruOAhQnMfDDoLGBlITBCDzgejFoxagAnQiwpCgOSiZNAF0eDLySMvDkgG6EFE9bqZbj6gWdMFAJv9CTpvG20wAAAAAElFTkSuQmCC');
+	background-position: top left;
+	background-repeat: no-repeat;
+    text-align:left;
+    display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	vertical-align: top;
+    *margin-top: 4px;
+}
+.content {
+	padding:0 40px 40px 40px;
+    margin-top: 30px;
+	vertical-align:top;
+    text-align:center;
+}
+
+.clear {clear:both;}
+.ribbon {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	margin: 0;
+	border-radius: 4px 4px 0 0;
+	border-bottom: 1px solid #e5e5e5;
+	text-align: center;
+}
+.ribbon span { line-height: 48px;}
+.bold {font-weight: bold;}
+.url-section-title {margin-top: 20px;}
+.url-section-wrap__url {cursor: help; display:inline;border-bottom: 1px dashed #e5e5e5;}
+.url-section-verdict {margin-top: 20px;}
+.url-section-source {margin-top: 5px;}
+.url-section-falsepositive {margin-top: 30px;}
+.url-section-timestamp {margin: 30px 0 0 0; color: #999;font-size: 12px;}
+span { color: #666;}
+.url-section-wrap { overflow: hidden; white-space: nowrap; text-overflow: ellipsis; word-break: break-all; word-wrap: break-word; }
+    </style>
+</head>
+<body>
+<table class="wrapper">
+	<tbody><tr>
+		<td>
+			<div class="main">
+				<div class="ribbon"><span>Kaspersky</span> <span>Internet Security</span></div>
+				<div class="aside">
+					<div class="pic"></div>
+                    <h1>Access denied</h1>
+				</div>
+				<div class="content">
+						<p class="bold">The requested URL cannot be provided</p>
+						<!--<p class="url-section-title bold">URL:</p>-->
+						<div class="url-section-wrap">
+							<p class="url-section-wrap__url" title="http://wellsfargo.com.clarkandwilkins.com/wellsf.zip">http://wellsfargo.com.clarkandwilkins.co&lt;...&gt;</p>
+						</div>
+						<p class="url-section-verdict bold">Blocked by Web Anti-Virus</p>
+						<p><span>Reason: threat of data loss</span></p>
+						<p><span>Detection method: databases</span></p>
+						<p class="url-section-falsepositive"><a href="http://touch.kaspersky.com/kis_cup_C6FA3ED5_6D17_47D1_B6E2_F4B02CC905E0_18F8DDCD-8AB5-0A4E-BA8C-4401A9D29CC6">Click here if you believe that the web page has been blocked by mistake. The application will not block it anymore.</a>
+						</p>
+						<p class="url-section-timestamp">Message generated at: 16:21:42</p>
+				</div>
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td height="50">
+			<div class="logo"></div>
+		</td>
+	</tr>
+	</tbody>
+</table>
+</body>
+</html><!-- KL-CF-ResponseTemplate AntiPhishingDatabase -->
