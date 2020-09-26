@@ -27,5 +27,6 @@ My reports reach:
 As I do this in my free time, I have created a patreon page and also a buymeacoffee page. 
 <dl>
 <a class="bmc-button" target="_blank" href="https://www.buymeacoffee.com/SpamReports"><img src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg" alt="Gift me a coffee"><span style="margin-left:15px;font-size:16px !important;">Buy me a coffee</span></a>
-<a href="https://www.patreon.com/bePatron?u=21521547" data-patreon-widget-type="become-patron-button">Become a Patron!</a><img src="hhttps://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f1f989e4-a1eb-4029-9671-146dbc638b75/d9jrdun-7b376842-9a5a-4d11-bb88-f749f5c2edd2.png" alt="Become a Patron"><span style="margin-left:15px;font-size:16px !important;">Become a Patron</span></a>
+<br>
+<a href="https://www.patreon.com/bePatron?u=21521547" data-patreon-widget-type="become-patron-button">Become a Patron!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
 </dl>
