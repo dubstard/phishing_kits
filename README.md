@@ -28,5 +28,5 @@ As I do this in my free time, I have created a patreon page and also a buymeacof
 <dl>
 <a class="bmc-button" target="_blank" href="https://www.buymeacoffee.com/SpamReports"><img src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg" alt="Gift me a coffee"><span style="margin-left:15px;font-size:16px !important;">Buy me a coffee</span></a>
 <br>
-<a href="https://www.patreon.com/bePatron?u=21521547" data-patreon-widget-type="become-patron-button"><a href="https://www.patreon.com/bePatron?u=21521547" data-patreon-widget-type="become-patron-button"><img src="https://i.imgur.com/uK67rPG.png" alt="Become a patron"><span style="margin-left:15px;font-size:16px !important;">Become a patron</span></a>
+<a href="https://www.patreon.com/bePatron?u=21521547" data-patreon-widget-type="become-patron-button"><a href="https://www.patreon.com/bePatron?u=21521547" data-patreon-widget-type="become-patron-button"><img src="https://i.imgur.com/uK67rPG.png" alt="Become a patron" width="80" height="80"><span style="margin-left:15px;font-size:16px !important;">Become a patron</span></a>
 </dl>
